@@ -5,7 +5,7 @@ const ImgComponent = () => {
     <View>
       <Image
         source={require("../assets/art.jpg")}
-        style={{ width: 100, height: 100, borderRadius: 50 }}
+        style={{ width: 150, height: 150, borderRadius: 75 }}
       />
     </View>
   );
