@@ -1,10 +1,15 @@
 import { View, Text } from "react-native";
 import React from "react";
+import ListData from "../components/ListData";
+import ArrayOfObject from "@/components/ArrayOfObject";
+import ProductsProject from "@/components/ProductsProject";
 
 const HomeScreen = () => {
   return (
     <View>
-      <Text>HomeScreen</Text>
+      {/* <ListData /> */}
+      {/* <ArrayOfObject /> */}
+      <ProductsProject />
     </View>
   );
 };
