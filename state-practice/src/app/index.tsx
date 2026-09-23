@@ -1,5 +1,6 @@
 import ColorPicker from "@/components/ColorPicker";
 import Counter from "@/components/Counter";
+import TodoList from "@/components/TodoList";
 import UpdateArray from "@/components/UpdateArray";
 import UpdateObjects from "@/components/UpdateObjects";
 import WeatherApp from "@/components/WeatherApp";
@@ -12,7 +13,8 @@ const index = () => {
       {/* <UpdateArray /> */}
       {/* <UpdateObjects /> */}
       {/* <WeatherApp /> */}
-      <ColorPicker />
+      {/* <ColorPicker /> */}
+      <TodoList />
     </View>
   );
 };
