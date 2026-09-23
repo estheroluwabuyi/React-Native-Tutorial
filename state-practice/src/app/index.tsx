@@ -1,3 +1,4 @@
+import ColorPicker from "@/components/ColorPicker";
 import Counter from "@/components/Counter";
 import UpdateArray from "@/components/UpdateArray";
 import UpdateObjects from "@/components/UpdateObjects";
@@ -10,7 +11,8 @@ const index = () => {
       {/* <Counter /> */}
       {/* <UpdateArray /> */}
       {/* <UpdateObjects /> */}
-      <WeatherApp />
+      {/* <WeatherApp /> */}
+      <ColorPicker />
     </View>
   );
 };
