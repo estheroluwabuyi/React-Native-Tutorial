@@ -24,7 +24,6 @@ const TASKS: Task[] = [
 
 const TodoList = () => {
   const [input, setInput] = useState("");
-  // const [tasks, setTasks] = useState(TASKS || null);
   const [tasks, setTasks] = useState<Task[]>([]);
   const [isFocused, setIsFocused] = useState(false);
 
@@ -35,7 +34,6 @@ const TodoList = () => {
     ]);
 
     setInput("");
-    console.log("input value:", input);
   };
 
   const handleDeleteTasks = (id: number) => {

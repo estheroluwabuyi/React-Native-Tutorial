@@ -35,7 +35,6 @@ const TodoList = () => {
     ]);
 
     setInput("");
-    console.log("input value:", input);
   };
 
   const handleDeleteTasks = (id: number) => {
