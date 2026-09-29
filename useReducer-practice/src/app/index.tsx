@@ -1,9 +1,10 @@
+import Counter from "@/components/Counter";
 import { View, Text } from "react-native";
 
 const Home = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <Counter />
     </View>
   );
 };
