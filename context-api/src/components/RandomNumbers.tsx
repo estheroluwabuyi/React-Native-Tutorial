@@ -14,7 +14,7 @@ export default function RandomNumbers() {
     <View>
       <Text>Number:</Text>
 
-      <Text>{randomNum}</Text>
+      <Text>Number {randomNum}</Text>
 
       <Button title="Add Random Number" onPress={getRandomNumber} />
     </View>

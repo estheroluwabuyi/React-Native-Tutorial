@@ -1,6 +1,7 @@
 import ComponentA from "@/components/ComponentA";
+import RandomNumbers from "@/components/RandomNumbers";
 import { UserProvider } from "@/context/UserContext";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 
 const Home = () => {
   const name = "Esther";
@@ -8,8 +9,8 @@ const Home = () => {
   return (
     <View style={styles.container}>
       <UserProvider>
-        {" "}
         <ComponentA />
+        <RandomNumbers />
       </UserProvider>
     </View>
   );
