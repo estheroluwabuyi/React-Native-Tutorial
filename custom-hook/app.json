@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "context-api",
-    "slug": "context-api",
+    "name": "custom-hook",
+    "slug": "custom-hook",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "contextapi",
+    "scheme": "customhook",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
