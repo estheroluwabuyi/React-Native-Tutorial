@@ -1,10 +1,18 @@
-import { View, Text } from "react-native";
-import React from "react";
+import useFetch from "@/hooks/useFetch";
+import { View, Text, FlatList } from "react-native";
+
+const URL = "https://jsonplaceholder.typicode.com/todos";
 
 const WithHook = () => {
+  const { data } = useFetch(URL);
+
   return (
     <View>
-      <Text>WithHook</Text>
+      <FlatList
+        data={data}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <Text>{item.title}</Text>}
+      />
     </View>
   );
 };
