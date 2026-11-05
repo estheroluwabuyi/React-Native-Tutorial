@@ -1,10 +1,12 @@
-import { Link } from 'expo-router';
+import { Link, useLocalSearchParams } from 'expo-router';
 import { View, Text } from 'react-native';
 
 const Users = () => {
+  const { id } = useLocalSearchParams();
+
   return (
     <View className="flex-1 bg-slate-100 px-6 py-12">
-      <Text className="mt-2 text-3xl font-bold text-slate-900">Users</Text>
+      <Text className="mt-2 text-3xl font-bold text-slate-900">Users - {id}</Text>
 
       <Text className="mt-2 text-base text-slate-500">Manage and view your users.</Text>
 

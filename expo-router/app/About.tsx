@@ -22,7 +22,7 @@ const About = () => {
         </Link>
 
         <Link
-          href="/users/adrian"
+          href="/users/100"
           className="mt-4 rounded-xl bg-green-600 px-5 py-4 text-center font-semibold text-white">
           Go to Adrian's Profile ➡️
         </Link>
