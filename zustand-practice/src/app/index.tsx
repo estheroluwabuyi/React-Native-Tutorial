@@ -1,11 +1,9 @@
+import ChangeUI from "@/components/ChangeUI";
 import { useCounterStore } from "@/store/store";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 const Home = () => {
   const count = useCounterStore((state) => state.count);
-  const increase = useCounterStore((state) => state.increase);
-  const decrease = useCounterStore((state) => state.decrease);
-  const reset = useCounterStore((state) => state.reset);
 
   return (
     <View style={styles.container}>
@@ -13,12 +11,7 @@ const Home = () => {
 
       <View style={styles.card}>
         <Text style={styles.count}>{count}</Text>
-
-        <View style={styles.buttons}>
-          <Button title="Increase Count" color="#2563EB" onPress={increase} />
-          <Button title="Decrease Count" color="#64748B" onPress={decrease} />
-          <Button title="Reset Count" color="#a72b92" onPress={reset} />
-        </View>
+        <ChangeUI />
       </View>
     </View>
   );
@@ -56,10 +49,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#2563eb",
     marginBottom: 32,
-  },
-  buttons: {
-    width: "100%",
-    gap: 16,
   },
 });
 
